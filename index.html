@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NaConta</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#014d41;
+    --card:#f5f6f4;
+    --primary:#00d63b;
+    --primary-hover:#00c236;
+    --text:#042e28;
+    --muted:#73837e;
+    --border:#d8e4db;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:32px 20px;
+}
+
+.card{
+    width:100%;
+    max-width:500px;
+    background:var(--card);
+    border-radius:28px;
+    padding:48px 32px;
+    box-shadow:0 25px 80px rgba(0,0,0,.18);
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:36px;
+}
+
+.logo img{
+    width:240px;
+    max-width:100%;
+    height:auto;
+}
+
+.subtitle{
+    text-align:center;
+    color:var(--muted);
+    line-height:1.7;
+    font-size:15px;
+    margin-bottom:42px;
+}
+
+.actions{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    min-height:60px;
+    border-radius:16px;
+    text-decoration:none;
+    font-weight:700;
+    transition:all .2s ease;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:#003025;
+}
+
+.btn-primary:hover{
+    background:var(--primary-hover);
+}
+
+.btn-secondary{
+    background:#fff;
+    color:var(--text);
+    border:1px solid var(--border);
+}
+
+.btn-secondary:hover{
+    border-color:var(--primary);
+}
+
+.section{
+    margin-top:48px;
+    padding-top:32px;
+    border-top:1px solid var(--border);
+}
+
+.section-title{
+    text-align:center;
+    font-size:12px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.14em;
+    color:#7b8c87;
+    margin-bottom:20px;
+}
+
+.social-links{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.social{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    min-height:60px;
+    padding:0 20px;
+    border-radius:14px;
+    text-decoration:none;
+    color:var(--text);
+    background:#fff;
+    border:1px solid var(--border);
+    font-weight:600;
+    transition:all .2s ease;
+}
+
+.social:hover{
+    transform:translateY(-2px);
+    border-color:var(--primary);
+}
+
+.arrow{
+    color:var(--muted);
+    font-size:18px;
+}
+
+.footer{
+    margin-top:40px;
+    text-align:center;
+}
+
+.footer a{
+    color:var(--muted);
+    text-decoration:none;
+    font-size:14px;
+    transition:.2s;
+}
+
+.footer a:hover{
+    color:var(--text);
+}
+
+@media (max-width:480px){
+
+    .card{
+        padding:40px 24px;
+    }
+
+    .logo img{
+        width:220px;
+    }
+
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+
+    <div class="logo">
+        <img
+            src="https://naconta.app/naconta-auth.png"
+            alt="NaConta">
+    </div>
+
+    <p class="subtitle">
+        Organize suas recorrências, reservas e dívidas
+        em uma visão simples.
+    </p>
+
+    <div class="actions">
+
+        <a href="https://naconta.app/"
+           class="btn btn-primary">
+            Acessar NaConta
+        </a>
+
+        <a href="https://naconta.com.br/diagnostico"
+           class="btn btn-secondary">
+            Fazer diagnóstico financeiro
+        </a>
+
+    </div>
+
+    <div class="section">
+
+        <div class="section-title">
+            Redes sociais
+        </div>
+
+        <div class="social-links">
+
+            <a href="https://instagram.com/naconta_app"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="social">
+                <span>Instagram</span>
+                <span class="arrow">→</span>
+            </a>
+
+            <a href="#"
+               class="social">
+                <span>YouTube</span>
+                <span class="arrow">→</span>
+            </a>
+
+            <a href="#"
+               class="social">
+                <span>Facebook</span>
+                <span class="arrow">→</span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <a href="https://naconta.com.br"
+           target="_blank"
+           rel="noopener noreferrer">
+            Saiba mais sobre a NaConta
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
